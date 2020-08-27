@@ -2,6 +2,7 @@
 from netmiko import Netmiko
 from getpass import getpass
 
+#The username is user, and getpass is asking for the password.
 username = "user"
 password = getpass()
 
@@ -19,7 +20,7 @@ cisco2 = {
     "device_type": "cisco_ios",
 }
 
-
+#Runnning three commands (command1, 2 and 3) through all devices, and then print the three commands.
 for device in (cisco1, cisco2):
     net_connect = Netmiko(**device)
     command1 = "show env power"
