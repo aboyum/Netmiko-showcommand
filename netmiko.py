@@ -2,8 +2,8 @@
 from netmiko import Netmiko
 from getpass import getpass
 
-#The username is user, and getpass is asking for the password.
-username = "user"
+#Input is asking for username, and getpass is asking for the password.
+username = input("Enter your username")
 password = getpass()
 
 cisco1 = {
